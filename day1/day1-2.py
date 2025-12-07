@@ -23,7 +23,7 @@ for i in sequence:
 
     print(f"count = {count}")
 
-    if dial <= 0:
+    if dial <= 0 and dial != change:
        count += 1
     count += abs(int(dial/100))
 
@@ -34,6 +34,6 @@ for i in sequence:
 
     print(f"using dial %= 100 to set dial to {dial}")
 
-    #input() 
+    #input()
 
 print(count)
